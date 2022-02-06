@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+section .banner{ width: 100%; height: 400px}
+section .banner ul{
+  width: 100%; height: 100%;
+  background-image: url(../img/customer/bg.jpg);
+  background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;
+}
+section .banner ul li{
+  font-size: 24px; color: #fff; line-height: 490px;
+  text-align: center; font-weight: bold; text-shadow: 4px 2px 10px rgb(0 0 0 / 80%); 
+}
+
+section .cont{width: 1200px; padding: 0 10px 80px; margin: 0 auto;}
+section .cont h2{color: #555; font-size: 22px; font-weight: bold;}
+section .cont h2::after{
+  content: url(../img/info/border_orange.png);
+  display: block;
+}
+
+section .cont1{padding-top: 100px;}
+section .cont1 h3{color: #555; font-size: 18px; padding: 18px 0 20px;}
+section .cont1 p{color: #555; font-size: 14px; padding-bottom: 60px;}
+
+section .cont1 .apt{}
+section .cont1 .apt .apt_txt{
+  display: flex; justify-content: space-between; align-items: start;
+}
+section .cont1 .apt .apt_txt p{
+  font-weight: bold; font-size: 14px;
+}
+section .cont1 .apt .apt_txt button{
+  border: none; background-color: #f47321; width: 160px; height: 40px; color: #fff; font-size: 14px; cursor: pointer; 
+}
+
+section .cont1 .apt .apt_box{
+  display: flex; justify-content: space-between;
+}
+section .cont1 .apt .apt_box .info{
+  width: 380px; height: 120px; border: 1px solid #ccc;
+  background-size: 62px 62px; background-position: 90% 50%; background-repeat: no-repeat; cursor: pointer;
+  padding-left: 20px;
+}
+section .cont1 .apt .apt_box .info1{
+  background-image: url(../img/customer/icon01.png);
+}
+section .cont1 .apt .apt_box .info2{
+  background-image: url(../img/customer/icon02.png);
+}
+section .cont1 .apt .apt_box .info3{
+  background-image: url(../img/customer/icon03.png);
+}
+section .cont1 .apt .apt_box .info p{padding-top: 50px; font-size: 14px;}
+section .cont1 .apt .apt_box .info1 p{padding-top: 35px;}
+section .cont1 .apt .apt_box .info1 p span{ padding: 5px 0 0; font-size: 28px; display: block; font-weight: 500;}
+
+section .cont2{width: 1200px; padding: 0 10px; margin: 0 auto;
+}
+section .cont2 .prod{
+  display: flex; justify-content: space-between;
+}
+section .cont2 .prod .p_box{
+  width: 395px; height: 46px; background-size: 15px 46px, 16px 46px; background-position: 0 0, 100% 100%; background-repeat: no-repeat;
+}
+section .cont2 .prod .p_box1{
+  background-image: url(../img/customer/txt_bar_left.png), url(../img/customer/txt_bar_right.png);
+}
+section .cont2 .prod .p_box2, section .cont2 .prod .p_box3{
+  background-image: url(../img/customer/txt_bar_left_grey.png), url(../img/customer/txt_bar_right_grey.png);
+}
+section .cont2 .prod .p_box p{
+  width: 363px; margin: 0 auto; text-align: center; color: #fff; line-height: 46px; font-size: 14px;
+}
+section .cont2 .prod .p_box1 p{
+  background-color: #f47321;
+}
+section .cont2 .prod .p_box2 p, section .cont2 .prod .p_box3 p{
+  background-color: #e7e7e7; color: #f47321;
+}
+
+
+section .cont2 .join{}
+section .cont2 .join h3{
+  font-size: 20px; font-weight: 500; color: #555; padding: 40px 0;
+}
+section .cont2 .join span{
+  font-size: 14px; color: #555; line-height: 160%; padding-bottom: 40px; display: block;
+}
+section .cont2 .join .ex{
+  overflow-y: scroll; width: 100%; height: 400px; padding: 20px; font-size: 14px; background-color: #eee; color: #555; line-height: 160%;
+}
+section .cont2 .join .answer{
+  text-align: right; margin-top: 10px; font-size: 14px; color: #555;
+}
+
+section .cont2 .cert{}
+section .cont2 .cert h3{
+  font-size: 20px; font-weight: 500; color: #555; padding: 40px 0;
+}
+section .cont2 .cert span{
+  font-size: 14px; color: #555; line-height: 160%; padding-bottom: 40px; display: block;
+}
+section .cont2 .cert .cert_box{
+  width: 100%; border: 1px solid #f47321;
+  display: flex; padding: 30px; position: relative;
+}
+section .cont2 .cert .cert_box .img{
+  width: 152px; height: 45px; background-size: cover;
+  background-image: url(../img/customer/i_pin_logo.png);
+  background-position: 50% 50%; background-repeat: no-repeat; 
+}
+section .cont2 .cert .cert_box p{
+  color: #555; line-height: 160%; font-size: 14px; padding-left: 20px;
+}
+section .cont2 .cert .cert_box button{
+  border: none; color: #fff; background-color: #f47321;
+  width: 135px; height: 30px; position: absolute; top: 50%; right: 30px; transform: translateY(-50%);
+}
+section .cont2 .cert .confirm{ padding: 40px 0;}
+section .cont2 .cert .confirm ul{
+  display: flex; justify-content: center;
+}
+section .cont2 .cert .confirm ul li{
+  margin-right: 20px; width: 180px; height: 50px; background-color: #f47321; text-align: center;
+}
+section .cont2 .cert .confirm ul li:last-child{
+  margin-right: 0; background-color: #555;
+}
+section .cont2 .cert .confirm ul li a{
+  font-size: 14px; color: #fff; line-height: 50px; cursor: pointer;
+}

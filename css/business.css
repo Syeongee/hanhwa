@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+section .banner{ width: 100%; height: 530px; position: relative;}
+section .banner>ul{
+  width: 100%; height: 400px;
+  background-image: url(../img/business/bg.jpg);
+  background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;
+}
+section .banner .tit{
+  width: 1200px; padding: 0 10px; margin: 0 auto;
+  position: absolute;
+  bottom: 0; left: 50%; transform: translateX(-50%)
+}
+section .banner .tit ul{background-color: #f47321; 
+}
+section .banner .tit ul li{
+  text-align: center; color: #fff; padding: 25px 0 45px;
+}
+section .banner .tit ul li h1{font-size: 26px; font-weight: 400; padding: 15px 0;}
+section .banner .tit ul li h1::before{
+  content: url(../img/business/title_icon.png);
+  display: block;
+}
+section .banner .tit ul li h1 span{
+  font-size: 28px; font-family: 'Play', sans-serif;
+}
+section .banner .tit ul li p{
+  font-size: 14px; font-weight: 400;
+}
+
+section .cont{width: 1200px; padding: 100px 10px; margin: 0 auto;}
+
+section .cont p{
+  text-align: center; width: 780px; font-size: 14px;
+  color: #000; margin: 0 auto; line-height: 180%;
+  letter-spacing: -1px; word-break: keep-all;
+}
+
+section .cont2{width: 1180px; padding-top: 20px; margin: 0 auto; overflow: hidden;} 
+section .cont2 h2{color: #555; font-size: 22px; font-weight: bold;}
+section .cont2 h2::after{
+  content: url(../img/info/border_orange.png);
+  display: block;
+}
+
+/* 슬라이드 */
+
+section .cont2 .slide{
+  width: 200%; padding-top: 40px; margin: 0 auto;
+  display: flex; flex-direction: row;
+}
+section .cont2 .slide .slide_box{
+  width: 50%;
+}
+section .cont2 .slide .slide_box .slide_img{
+  width: 100%; height: 561px; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; position: relative;
+}
+section .cont2 .slide .slide_box:nth-child(1) .slide_img{
+  background-image: url(../img/business/slide01.jpg);
+}
+section .cont2 .slide .slide_box:nth-child(2) .slide_img{
+  background-image: url(../img/business/slide02.jpg);
+}
+section .cont2 .slide .slide_box .slide_img .btn{
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 8;
+}
+section .cont2 .slide .slide_box .slide_img .btn a{
+    cursor: pointer; height: 64px; width: 64px; position: absolute;
+    background-size: cover; background-repeat: no-repeat; 
+}
+section .cont2 .slide .slide_box .slide_img .btn .prevbtn{background-image: url(../img/business/slide_prev.png); left: 0;}
+section .cont2 .slide .slide_box .slide_img .btn .nextbtn{background-image: url(../img/business/slide_next.png); right: 0;}
+
+
+/* 슬라이드 설명 */
+
+section .cont2 .slide .slide_box .slide_info{
+  padding: 30px 0; display: flex; position: relative;
+  border-bottom: 1px solid #f47321;  
+}
+section .cont2 .slide .slide_box .slide_info ul{display: flex; }
+section .cont2 .slide .slide_box .slide_info ul li{
+  color: #555; padding-right: 20px; font-size: 14px; line-height: 25px;
+}
+section .cont2 .slide .slide_box .slide_info ul li h1{
+  font-size: 22px; font-weight: bold;
+}
+section .cont2 .slide .slide_box .slide_info ul li span{font-weight: bold;}
+section .cont2 .slide .slide_box .slide_info button{
+  background-color: #f47321; color: #fff; border: none;
+  width: 160px; height: 40px; font-size: 14px;
+  position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+}
+
+/* 사업 시설 */
+
+section .cont3{
+  width: 1200px; padding: 60px 10px; margin: 0 auto;
+  display: flex; flex-wrap: wrap;
+}
+section .cont3 .box{
+  width: 380px; margin: 0 20px 20px 0;
+  border: 1px solid #ddd; border-radius: 20px;
+  height: 300px; background-size: cover;
+  background-position: 50% 50%; background-repeat: no-repeat;
+}
+section .cont3 .box1{
+  background-image: url(../img/business/01_img.png);
+}
+section .cont3 .box2{
+  background-image: url(../img/business/02_img.png);
+}
+section .cont3 .box3{
+  background-image: url(../img/business/03_img.png);
+  margin-right: 0;
+}
+section .cont3 .box4{
+  background-image: url(../img/business/04_img.png);
+}
+section .cont3 .box5{
+  background-image: url(../img/business/05_img.png);
+}
+section .cont3 .box6{
+  background-image: url(../img/business/06_img.png);
+  margin-right: 0;
+}
+section .cont3 .box .box_tit{
+  padding: 10px;
+}
+section .cont3 .box .box_tit li{
+  text-align: center; font-size: 22px; line-height: 22px;
+  font-weight: bold; color: #f47321; position: relative;; padding: 10px 0 20px; border-bottom: 1px solid #ddd;
+} 
+section .cont3 .box .box_tit li span{ position: absolute; left: 20px; font-size: 28px;}
+section .cont3 .box .box_txt{ padding-top: 10px;}
+section .cont3 .box .box_txt li{ text-align: center;color: #555; font-size: 14px; line-height: 160%; letter-spacing: -1px;}
